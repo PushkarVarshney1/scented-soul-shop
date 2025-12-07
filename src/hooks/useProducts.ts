@@ -7,7 +7,7 @@ export interface Product {
   description: string | null;
   gender: string;
   retail_price: number;
-  wholesale_price: number;
+  wholesale_price: number | null;
   image_url: string | null;
   created_at: string;
 }
