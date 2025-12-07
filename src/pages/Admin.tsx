@@ -75,7 +75,7 @@ const Admin = () => {
       description: product.description || '',
       gender: product.gender,
       retail_price: product.retail_price.toString(),
-      wholesale_price: product.wholesale_price.toString(),
+      wholesale_price: product.wholesale_price?.toString() || '',
       image_url: product.image_url || '',
     });
     setEditingProduct(product);
@@ -367,7 +367,7 @@ const Admin = () => {
                         </td>
                         <td className="px-4 py-4">
                           <span className="font-body text-muted-foreground">
-                            ${product.wholesale_price.toFixed(2)}
+                            {product.wholesale_price !== null ? `$${product.wholesale_price.toFixed(2)}` : '-'}
                           </span>
                         </td>
                         <td className="px-4 py-4">

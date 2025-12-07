@@ -44,9 +44,11 @@ export function ProductCard({ product, onAddToCart }: ProductCardProps) {
           <span className="font-display text-2xl text-primary">
             ${product.retail_price.toFixed(2)}
           </span>
-          <span className="font-body text-sm text-muted-foreground line-through">
-            ${product.wholesale_price.toFixed(2)}
-          </span>
+          {product.wholesale_price !== null && (
+            <span className="font-body text-sm text-muted-foreground line-through">
+              ${product.wholesale_price.toFixed(2)}
+            </span>
+          )}
         </div>
 
         {/* Add to Cart */}
