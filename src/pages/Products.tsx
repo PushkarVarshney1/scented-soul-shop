@@ -99,7 +99,7 @@ const Products = () => {
                     <div className="flex items-center justify-between mb-3">
                       <label className="font-body text-sm text-foreground">Price Range</label>
                       <span className="font-body text-sm text-muted-foreground">
-                        ${priceRange[0]} - ${priceRange[1]}
+                        ₹{priceRange[0]} - ₹{priceRange[1]}
                       </span>
                     </div>
                     <Slider

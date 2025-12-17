@@ -13,7 +13,7 @@ const Index = () => {
         {/* Background Image */}
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: 'url(/images/hero-bg.png)' }}
+          style={{ backgroundImage: 'url(/images/img3.webp)' }}
         >
           <div className="absolute inset-0 bg-gradient-to-b from-background/70 via-background/50 to-background" />
         </div>
@@ -22,7 +22,7 @@ const Index = () => {
         <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
           <h1 className="font-display text-5xl md:text-7xl lg:text-8xl text-foreground mb-6 animate-fade-in-up">
             Welcome to
-            <span className="block text-gold-gradient mt-2">Ecommerce</span>
+            <span className="block text-gold-gradient mt-2">E-Commerce</span>
           </h1>
           
           <p className="font-elegant text-xl md:text-2xl text-muted-foreground mb-10 animate-fade-in-up animation-delay-200">
